@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+            color: #333; /* Dark text color */
+            
+        }
+       #space{
+        padding: 10px;
+       }
+        .dropdown-item {
+            color: white;
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            height: 70vh;
+            width: 100%;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card {
+            height: 100%;
+        }
+        .hover-effect:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+    background-color: rgb(203, 214, 217); /* Change background color on hover */
+    color: rgb(9, 7, 7); /* Change text color on hover */
+    background-color: #b3e4f0;
+}
+    </style>
+</head>
+
+<body>
+
+    <div id="home">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><h3> iCoder</h3></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Topics
+                            </a>
+                            <ul class="dropdown-menu navbar-dark bg-dark">
+                                <li><a class="dropdown-item" href="#code">Compitative Coding</a></li>
+                                <li><a class="dropdown-item" href="#codefront">Web Programing</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#codefront">FrontEnd</a></li>
+                                <li><a class="dropdown-item" href="#back">BackEnd</a></li>
+                            </ul>
+                        </li>
+                        <nav class="navbar navbar-dark bg-dark">
+                            <form class="container-fluid justify-content-start">
+
+                                <button id="signUpButton" class="btn btn-sm btn-outline-secondary" type="button">Sign Up</button>
+                            </form>
+                        </nav>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="im4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Artificial Intelligence and Machine Learning Integration</h3>
+                        <p>It involves incorporating AI and ML
+                            algorithms into web applications to enhance functionality, automate processes, and provide
+                            personalized user experiences based on data-driven insights.
+                            .</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="i5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Programming Code in Current Technology</h3>
+                        <p>Programming code serves as the backbone of modern technology, empowering innovation and
+                            driving efficiency across various industries and sectors.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Empowering Digital Connectivity
+                        </h3>
+                        <p>Web technology facilitates seamless digital connectivity, enabling information sharing,
+                            communication, and collaboration across global networks.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <hr>
+    <br>
+    <br>
+    <div id="space">
+    <div id="About" >
+        <h3 >Explore Different Web Development
+            Technologies:</h3>
+            <br>
+        <div class="accordion" id="accordionPanelsStayOpenExample" >
+
+            <div class="accordion-item" >
+                
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Frontend Frameworks (e.g., React, Angular, Vue.js)
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> Frontend frameworks like React,
+                        Angular, and Vue.js facilitate the development of dynamic and interactive user interfaces,
+                        enhancing user experience and application performance. <code>.accordion-body</code>, though the
+                        transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Database Systems (e.g., MySQL, MongoDB, PostgreSQL)
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> Database systems like MySQL, MongoDB,
+                        and PostgreSQL store and manage the structured data used by web applications, ensuring
+                        reliability, scalability, and data integrity.<code>.accordion-body</code>, though the transition
+                        does
+                        limit
+                        overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Backend Technologies (e.g., Node.js, Django, Ruby on Rails)
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> Backend technologies such as Node.js,
+                        Django, and Ruby on Rails provide the server-side logic and database connectivity needed to
+                        power web applications, enabling efficient data processing and management.
+                        <code>.accordion-body</code>, though the transition does
+                        limit
+                        overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+<br>
+
+    <div id="code">
+        <h2>Competitive Coding </h2>
+        <br>
+        <p><strong>Competitive programming</strong>, a dynamic discipline blending problem-solving with algorithmic prowess, challenges participants to solve intricate computational problems within strict time constraints.
+            <br><strong>Competitive programming </strong>serves as both a sport and a learning platform, fostering a culture of innovation and technical excellence among programmers of all levels. With its roots in academia and enthusiast communities, competitive programming has expanded its reach into industries where efficient algorithms and optimized solutions are crucial, including software development, data analysis, cybersecurity, and financial modeling.
+        </p>
+        <br>
+        <div class="container">
+        <div class="row ">
+            <div class="col-md-4 mb-4">
+                <div class="card hover-effect" style="width: 18rem;">
+                    <img src="C++.png" class="card-img-top card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">C++</h5>
+                        <p class="card-text"> C++ is a powerful, high-level programming language known for its
+                            performance, flexibility, and extensive use in system programming, game development, and
+                            competitive coding.</p>
+                        <a href="https://www.w3schools.com/cpp/default.asp" target="_blank" class="btn btn-primary">Check
+                            </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card hover-effect" style="width: 18rem;">
+                    <img src="python.png" class="card-img-top card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text"> Python is a simple yet powerful interpreted language known for its
+                            readability, ease of learning, and extensive standard library, widely used in web
+                            development, data science, and algorithmic problem-solving.</p>
+                        <a href="https://www.w3schools.com/python/default.asp" target="_blank"
+                            class="btn btn-primary">Check</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card hover-effect" style="width: 18rem;">
+                    <img src="java.png" class="card-img-top card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Java</h5>
+                        <p class="card-text"> Java is a versatile, object-oriented programming language renowned for its
+                            platform independence, strong typing, and extensive standard library, commonly used in
+                            enterprise applications, mobile development, and competitive programming.</p>
+                        <a href="https://www.w3schools.com/java/default.asp" target="_blank" class="btn btn-primary">Check</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row ">
+            <div class="col-md-4 mb-4">
+                <div class="card hover-effect" style="width: 18rem;">
+                    <img src="im9.png" class="card-img-top card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">C#</h5>
+                        <p class="card-text"> C# is a modern, object-oriented programming language developed by
+                            Microsoft, valued for its simplicity, productivity, and seamless integration with the .NET
+                            ecosystem, utilized in game development, enterprise applications, and competitive coding.
+                        </p>
+                        <a href="https://www.w3schools.com/cs/index.php" target="_blank" class="btn btn-primary">Check</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card hover-effect" style="width: 18rem;">
+                    <img src="javascript.png" class="card-img-top card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <p class="card-text">JavaScript is a versatile, dynamically-typed scripting language recognized
+                            for its ubiquity in web development, asynchronous programming model, and extensive ecosystem
+                            of libraries and frameworks, pivotal in building interactive web applications and
+                            participating in competitive coding.</p>
+                        <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="btn btn-primary">Check</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card hover-effect" style="width: 18rem;">
+                    <img src="ruby.png" class="card-img-top card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruby</h5>
+                        <p class="card-text"> Ruby is a dynamic, object-oriented programming language prized for its
+                            simplicity, expressiveness, and elegant syntax, commonly used in web development, automation
+                            scripting, and algorithmic problem-solving, particularly in the Ruby on Rails framework.</p>
+                        <a href="https://www.ruby-lang.org/en/documentation/" target="_blank" class="btn btn-primary">Check</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div id="codefront">
+        <h2>Frontend Programing language</h2>
+        <br>
+        <p><strong>Frontend programming </strong>involves designing and developing the user interface and client-side functionality of web applications. It focuses on creating visually appealing and interactive experiences for users by using technologies such as HTML, CSS, and JavaScript. Frontend developers work closely with designers to implement user interface designs, ensuring responsiveness and accessibility across various devices and browsers. They also integrate with backend systems to fetch and display dynamic data, often utilizing frameworks like React, Angular, or Vue.js to build complex user interfaces efficiently.</p>
+        <br>
+        <div class="container">
+        <div class="row ">
+            <div class="col-md-4 mb-4">
+                <div class="card hover-effect" style="width: 18rem;">
+                    <img src="html.png" class="card-img-top card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML (Hypertext Markup Language)</h5>
+                        <p class="card-text"> HTML provides the structure, CSS styles the presentation, and React with
+                            JSX enables dynamic user interfaces within JavaScript applications.</p>
+                        <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="btn btn-primary">Check</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card hover-effect" style="width: 18rem;">
+                    <img src="CSS.png" class="card-img-top card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS (Cascading Style Sheets)</h5>
+                        <p class="card-text"> CSS, or Cascading Style Sheets, is a styling language used to control the
+                            presentation and layout of HTML documents on the web.
+                        </p>
+                        <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="btn btn-primary">Check</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card hover-effect" style="width: 18rem;">
+                    <img src="React.png" class="card-img-top card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">React (with JSX)</h5>
+                        <p class="card-text">React with JSX is a JavaScript library for building user interfaces,
+                            utilizing JSX, an XML-like syntax extension, to define UI components within JavaScript code.
+                        </p>
+                        <a href="https://www.w3schools.com/react/default.asp" target="_blank" class="btn btn-primary">Check</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+       
+     <h2 id="back">Backend Programing language</h2>
+     <br>
+        <p><strong> Backend programming </strong>involves building the server-side logic and infrastructure that power web applications. It encompasses tasks such as database management, server configuration, and implementing business logic. Backend developers use programming languages like Python, Node.js, Java, or PHP to create robust APIs and services that handle data processing, authentication, and communication with the frontend. They also focus on scalability, security, and performance optimizations to ensure the smooth functioning of the application, often leveraging frameworks like Django, Express.js, Spring Boot, or Laravel to streamline development.</p>
+        <br>
+        <div class="container">
+        <div class="row ">
+            
+            
+            <div class="col-md-4 mb-4">
+                <div class="card hover-effect" style="width: 18rem;">
+                    <img src="nodee.png" class="card-img-top card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Node.js (JavaScript)</h5>
+                        <p class="card-text"> Node.js enables server-side JavaScript execution, PHP facilitates
+                            server-side scripting for web development, and Golang provides a powerful, efficient
+                            language for building scalable web applications.</p>
+                        <a href="https://www.w3schools.com/nodejs/default.asp" target="_blank"
+                            class="btn btn-primary">Check</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card hover-effect" style="width: 18rem;">
+                    <img src="php.png" class="card-img-top card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PHP (Hypertext Preprocessor)</h5>
+                        <p class="card-text">PHP is a server-side scripting language commonly used for web development,
+                            known for its ease of use and integration with databases like MySQL.</p>
+                        <a href="https://www.w3schools.com/php/default.asp" target="_blank" class="btn btn-primary">Check</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card hover-effect" style="width: 18rem;">
+                    <img src="go.png" class="card-img-top card-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Go (Golang)</h5>
+                        <p class="card-text">Go (Golang) is a statically typed, compiled programming language developed
+                            by Google, designed for building fast, efficient, and reliable software, including web
+                            applications and services.</p>
+                        <a href="https://www.w3schools.com/go/index.php" target="_blank" class="btn btn-primary">Check</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div></div></div>
+
+
+    <script>
+        // JavaScript code to execute when the "Sign Up" button is clicked
+        document.getElementById("signUpButton").addEventListener("click", function() {
+            // You can replace this alert with any action you want to perform
+            alert("Sign Up button clicked!");
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
